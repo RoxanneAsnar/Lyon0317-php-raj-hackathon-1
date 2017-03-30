@@ -1,7 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: wilder
- * Date: 30/03/17
- * Time: 12:00
- */
+<section class="footer-top">
+
+</section>
+<section class="footer-bottom">
+    <p class="text-center">Copyright © 2017 WildCodeSchool</p>
+</section>
