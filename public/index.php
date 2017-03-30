@@ -8,32 +8,12 @@ $twig   = new Twig_Environment($loader, array(
     'cache' => __DIR__ . '/../tmp',
 ));
 
-echo $twig->render('home.html.twig');
+$datas = json_decode(file_get_contents("http://www.omdbapi.com/?s=titanic", true));
+$datas = $datas->Search;
+
+
+echo $twig->render('index.html.twig', array('datas' => $datas));
 
 ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
-<body>
-    <head>
-        <?php require "../inc/head.php"; ?>
-    </head>
-
-    <div class="container-fluid">
-        <header>
-            <?php require "../inc/header.php"; ?>
-        </header>
-
-        <main>
-            <?php require "../page/home.php"; ?>
-        </main>
-
-        <footer>
-            <?php require "../inc/footer.php"; ?>
-        </footer>
-    </div>
-
-    <?php require "../inc/scripts.php"; ?>
-</body>
-</html>
