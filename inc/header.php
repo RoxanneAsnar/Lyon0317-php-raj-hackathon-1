@@ -16,9 +16,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right "  id="bs-example-navbar-collapse-1 ">
             <ul class="nav navbar-nav">
-                <li  class="active"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
-                <li><a href="#apropos" class="scroll">A Propos</a></li>
-                <li><a href="#restos" class="scroll">A propos</a></li>
+                <li  class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#apropos" class="scroll"></a></li>
+
             </ul>
 
 
