@@ -1,4 +1,25 @@
 /**
+NAV
+ */
+
+.navbar-right {
+    float: right !important;
+    margin-right: 0 !important;
+}
+
+.navbar{
+    border-radius: unset;
+}
+
+/**
+BODY
+ */
+
+body {
+    padding-top: 0 !important;
+}
+
+/**
 SEARCH FORM CSS
  */
 

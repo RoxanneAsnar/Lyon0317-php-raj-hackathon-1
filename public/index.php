@@ -1,3 +1,17 @@
+<?php
+
+    require_once("../vendor/autoload.php");
+
+    $bdd = new \wcs\BddManager();
+    $manager = new \wcs\AddKeywordsManager($bdd);
+
+    echo $keyword_field_form = $_POST["keyword_field_form"];
+    if (strlen($keyword_field_form) >= 3) {
+        $manager->setKeyword_field($keyword_field_form);
+        $manager->addKeyword_field();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
