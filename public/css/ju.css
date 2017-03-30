@@ -1,0 +1,14 @@
+.container-fluid {
+    padding: 0;
+}
+
+footer {
+}
+footer .footer-top {
+
+}
+footer .footer-bottom {
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+}
