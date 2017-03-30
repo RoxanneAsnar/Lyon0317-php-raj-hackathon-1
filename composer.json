@@ -1,0 +1,18 @@
+{
+    "name": "wcs/lyon0317-php-raj-hackathon-1",
+    "type": "project",
+    "description": "hackaton number one",
+    "authors": [
+        {
+            "name": "Roxanne Julien Amor"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.3",
+        "curl/curl": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {"wcs\\":["src/", "config/"]}
+    }
+
+}
