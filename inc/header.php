@@ -1,7 +1,7 @@
 <nav role="navigation" class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="col-xs-9 col-lg-3" >
-            <a id="logo" class="navbar-header" href="#"><img src="/public/img/logo.png" width="200px" height="50px"> </a>
+            <a id="logo" class="navbar-header" href="#"><img src="/img/logo.png" width="200px" height="50px"> </a>
         </div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header " >
