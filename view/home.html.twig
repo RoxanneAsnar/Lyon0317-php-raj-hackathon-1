@@ -1,18 +1,43 @@
 <div class="container-fluid" id="movies-results">
+    <div class="container" id="search-form">
+        <div class="row">
+            <div class="col-md-12">
 
-    <div id="grid-or-list">
-        <strong>Display movies</strong>
-        <div class="btn-group">
-            <a href="#" id="list" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-th-list"> </span>
-                List
-            </a>
-            <a href="#" id="grid" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-th"></span>
-                Grid
-            </a>
+                <form class="input-group form-horizontal" action="" method="post" id="adv-search" role="form">
+                    <input type="text" class="form-control" placeholder="Search for movies and series" name="keyword"/>
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg" >
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="filter">Filter by</label>
+                                            <select class="form-control" name="type">
+                                                <option value="youpi">All</option>
+                                                <option value="films">Films</option>
+                                                <option value="Series" >Series</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contain" name="year">Year</label>
+                                            <input class="form-control" type="text" />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+<!--twig-->
+
 
     <div id="products" class="row list-group">
         {% for data in datas %}

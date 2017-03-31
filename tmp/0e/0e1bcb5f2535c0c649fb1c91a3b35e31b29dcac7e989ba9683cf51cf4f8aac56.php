@@ -1,7 +1,7 @@
 <?php
 
 /* partial/footer.html.twig */
-class __TwigTemplate_ae5f4ccf5ea80fcca98bcfb888c63fd9f390a6cef89973b34d4bcde239a72e3c extends Twig_Template
+class __TwigTemplate_5cbb0a5d8fa0e94e9e8693f4c227350566d21c7e5727d2e0fd1665534518c0ed extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -36,6 +36,6 @@ class __TwigTemplate_ae5f4ccf5ea80fcca98bcfb888c63fd9f390a6cef89973b34d4bcde239a
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "partial/footer.html.twig", "/www/hackathon/Lyon0317-php-raj-hackathon-1/view/partial/footer.html.twig");
+        return new Twig_Source("", "partial/footer.html.twig", "/var/www/html/Lyon0317-php-raj-hackathon-1/view/partial/footer.html.twig");
     }
 }

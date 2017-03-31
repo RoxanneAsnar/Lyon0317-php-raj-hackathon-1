@@ -1,7 +1,7 @@
 <?php
 
 /* home.html.twig */
-class __TwigTemplate_06f325db6bff0fd3a0b271cd7ded88c764a7209d581021e431285a988c8ddc14 extends Twig_Template
+class __TwigTemplate_749c52241928ce4bfc5fbcac3cf347fd5cc3a26f3afc1d303a5fb5df3414eee2 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -17,40 +17,65 @@ class __TwigTemplate_06f325db6bff0fd3a0b271cd7ded88c764a7209d581021e431285a988c8
     {
         // line 1
         echo "<div class=\"container-fluid\" id=\"movies-results\">
+    <div class=\"container\" id=\"search-form\">
+        <div class=\"row\">
+            <div class=\"col-md-12\">
 
-    <div id=\"grid-or-list\">
-        <strong>Display movies</strong>
-        <div class=\"btn-group\">
-            <a href=\"#\" id=\"list\" class=\"btn btn-default btn-sm\">
-                <span class=\"glyphicon glyphicon-th-list\"> </span>
-                List
-            </a>
-            <a href=\"#\" id=\"grid\" class=\"btn btn-default btn-sm\">
-                <span class=\"glyphicon glyphicon-th\"></span>
-                Grid
-            </a>
+                <form class=\"input-group form-horizontal\" action=\"\" method=\"post\" id=\"adv-search\" role=\"form\">
+                    <input type=\"text\" class=\"form-control\" placeholder=\"Search for movies and series\" name=\"keyword\"/>
+                    <div class=\"input-group-btn\">
+                        <div class=\"btn-group\" role=\"group\">
+                            <div class=\"dropdown dropdown-lg\" >
+                                <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\"><span class=\"caret\"></span></button>
+                                <div class=\"dropdown-menu dropdown-menu-right\" role=\"menu\">
+
+                                    <div>
+                                        <div class=\"form-group\">
+                                            <label for=\"filter\">Filter by</label>
+                                            <select class=\"form-control\" name=\"type\">
+                                                <option value=\"youpi\">All</option>
+                                                <option value=\"films\">Films</option>
+                                                <option value=\"Series\" >Series</option>
+                                            </select>
+                                        </div>
+                                        <div class=\"form-group\">
+                                            <label for=\"contain\" name=\"year\">Year</label>
+                                            <input class=\"form-control\" type=\"text\" />
+                                        </div>
+                                        <button type=\"submit\" class=\"btn btn-primary\"><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button type=\"submit\" class=\"btn btn-primary\"><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+<!--twig-->
+
 
     <div id=\"products\" class=\"row list-group\">
         ";
-        // line 18
+        // line 43
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["datas"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["data"]) {
-            // line 19
+            // line 44
             echo "            <div class=\"item col-xs-6 col-md-4 col-lg-3\">
                 <div class=\"thumbnail\">
                     <div class=\"movie-img\">
                         <img class=\"group list-group-image\" src=\"";
-            // line 22
+            // line 47
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["data"], "Poster", array()), "html", null, true);
             echo "\" alt=\"\"/>
                     </div>
                     <div class=\"caption\">
                         <h4 class=\"group inner list-group-item-heading\">
                             ";
-            // line 26
+            // line 51
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["data"], "Title", array()), "html", null, true);
             echo "
                         </h4>
@@ -58,7 +83,7 @@ class __TwigTemplate_06f325db6bff0fd3a0b271cd7ded88c764a7209d581021e431285a988c8
                             <div class=\"col-xs-12 col-md-6\">
                                 <p class=\"lead\">
                                     ";
-            // line 31
+            // line 56
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["data"], "imdbID", array()), "html", null, true);
             echo "
                                 </p>
@@ -80,7 +105,7 @@ class __TwigTemplate_06f325db6bff0fd3a0b271cd7ded88c764a7209d581021e431285a988c8
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['data'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 44
+        // line 69
         echo "    </div>
 </div>";
     }
@@ -97,11 +122,15 @@ class __TwigTemplate_06f325db6bff0fd3a0b271cd7ded88c764a7209d581021e431285a988c8
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD:tmp/a8/a8c2771031d0db91c00d93ba57189b5f1d59e6f09e4c01a68ea5229254587c7c.php
         return array (  84 => 44,  69 => 35,  62 => 31,  54 => 26,  47 => 22,  42 => 19,  38 => 18,  19 => 1,);
+=======
+        return array (  108 => 69,  89 => 56,  81 => 51,  72 => 47,  67 => 44,  63 => 43,  19 => 1,);
+>>>>>>> b751eadfac5f2378737be228fa96ef6f6d7baf62:tmp/f3/f393c9d44336471a64ad39c4775265a50bb3e2e0e82b01842498c0f55e1b2599.php
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "home.html.twig", "/www/hackathon/Lyon0317-php-raj-hackathon-1/view/home.html.twig");
+        return new Twig_Source("", "home.html.twig", "/var/www/html/Lyon0317-php-raj-hackathon-1/view/home.html.twig");
     }
 }
