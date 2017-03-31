@@ -21,6 +21,7 @@ if (!empty($type)) {
 
 $bdd = new \wcs\BddManager();
 $manager = new \wcs\AddKeywordsManager($bdd);
+$datas2 = $manager->lastNeed();
 
 if (strlen($var) >= 3) {
     $manager->setKeyword_field($var);
@@ -36,5 +37,5 @@ $datas = json_decode(file_get_contents($url, true));
 $datas = $datas->Search;
 
 
-echo $twig->render('index.html.twig', array('datas' => $datas));
+echo $twig->render('index.html.twig', array('datas' => $datas, 'datas2' => $datas2));
 

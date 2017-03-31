@@ -49,4 +49,10 @@ class AddKeywordsManager
         return mysqli_real_escape_string($this->bdd->getConnection(), $field);
     }
 
+    public function lastNeed()
+    {
+        $sql = "SELECT * FROM " . self::TABLE . " ORDER BY id DESC LIMIT 10";
+        return $this->bdd->execSql($sql);
+    }
+
 }
