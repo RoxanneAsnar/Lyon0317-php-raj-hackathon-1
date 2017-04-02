@@ -12,7 +12,7 @@ namespace wcs;
 class Config
 {
     const USER = "root";
-    const PASSWORD = "azerty1234";
+    const PASSWORD = "azerty";
     const HOST = "localhost";
     const DBNAME = "keywords";
 }

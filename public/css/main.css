@@ -136,8 +136,21 @@ div#grid-or-list {
     margin: 0 auto;
 }
 
-h4 {
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-radius: unset;
+}
+
+h3.list-group-item-heading{
+    color: #35363B;
     text-align: center;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
 
-
+.navbar {
+    border-radius: 0 !important;
 }
