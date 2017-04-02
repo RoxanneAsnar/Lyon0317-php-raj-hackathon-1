@@ -7,7 +7,6 @@ require "../config/Config.php";
 $var = (isset($_POST['keyword'])) ? $_POST['keyword'] : null ;
 $year =(isset($_POST['year'])) ? $_POST['year'] : null ;
 $type = (isset($_POST['type'])) ? $_POST['type'] : null ;
-echo $var.$year.$type;
 $url= 'http://www.omdbapi.com/?s=';
 if (!empty($var)) {
     $url.=''.$var;

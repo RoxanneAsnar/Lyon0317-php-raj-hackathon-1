@@ -1,41 +1,24 @@
-<div class="container-fluid" id="movies-results">
-    <div class="container" id="search-form">
-        <div class="row">
-            <div class="col-md-12">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-                <form class="input-group form-horizontal" action="" method="post" id="adv-search" role="form">
-                    <input type="text" class="form-control" placeholder="Search for movies and series" name="keyword"/>
-                    <div class="input-group-btn">
-                        <div class="btn-group" role="group">
-                            <div class="dropdown dropdown-lg" >
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
-                                <div class="dropdown-menu dropdown-menu-right" role="menu">
-
-                                    <div>
-                                        <div class="form-group">
-                                            <label for="filter">Filter by</label>
-                                            <select class="form-control" name="type">
-                                                <option value="youpi">All</option>
-                                                <option value="films">Films</option>
-                                                <option value="Series" >Series</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="contain" name="year">Year</label>
-                                            <input class="form-control" type="text" />
-                                        </div>
-                                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+<form method="post" action="" class="navy">
+    <div class="form-group">
+        <label for="">Title</label>
+        <input type="text" class="form-control"   id="name" name="keyword" required>
     </div>
+    <div class="form-group">
+        <label for="pwd">Year:</label>
+        <input type="year" class="form-control" name="year" id="" placeholder="ex : 1968">
+    </div>
+    <div class="form-group">
+        <label for="">Type:</label>
+        <input type="type" class="form-control" name="type" placeholder="ex : Film [or] Serie" >
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 <!--twig-->
 
 
@@ -43,16 +26,23 @@
         {% for data in datas %}
             <div class="item col-xs-6 col-md-4 col-lg-3">
                 <div class="thumbnail">
+                    <h3 class="group inner list-group-item-heading">
+                        {{ data.Title }}
+                    </h3>
                     <div class="movie-img">
                         <img class="group list-group-image" src="{{ data.Poster }}" alt="{{ data.Title }}"/>
                     </div>
                     <div class="caption">
-                        <h4 class="group inner list-group-item-heading">
-                            {{ data.Title }}
-                        </h4>
+
+                        <div class="group inner list-group-item-heading">
+                            {{ data.Year }}
+                        </div>
+                        <div class="group inner list-group-item-heading" >
+                            {{ data.Type }}
+                        </div>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <p class="lead">
+                                <p class="group inner list-group-item-heading">
                                     {{ data.imdbID }}
                                 </p>
                             </div>

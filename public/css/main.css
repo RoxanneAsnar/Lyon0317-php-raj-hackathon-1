@@ -130,3 +130,27 @@ div#grid-or-list {
     border-color: #4cae4c;
     float: right;
 }
+
+.navy{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-radius: unset;
+}
+
+h3.list-group-item-heading{
+    color: #35363B;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+    border-radius: 0 !important;
+}
